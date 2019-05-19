@@ -54,7 +54,7 @@ class Encoder(GraphModule, Configurable):
     Encodes an input sequence.
 
     Args:
-      inputs: The inputs to encode. A float32 tensor of shape [B, T, ...].
+      inputs: The inputs to encode. A float32 tensor of shape [B, T, ...]. B应该代表batch-size，T代表句子长度
       sequence_length: The length of each input. An int32 tensor of shape [T].
 
     Returns:
